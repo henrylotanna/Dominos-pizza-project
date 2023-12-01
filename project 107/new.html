@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+  
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<script src="code.js"></script>
+
+
+<style>
+  body{
+    margin: 0;
+    background-color:azure;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color:white;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+    width: 98.5%;
+    height:5%;
+}
+li {
+    list-style-type: none;
+    float: right;
+    padding: 8px;
+}
+li a {
+    display:inline-block;
+    color: rgb(6, 21, 105);
+    text-align: center;    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .8s ease-in-out;
+}
+li a:hover:not(.active) {
+    background-color: #c02121;
+    border-radius: 10px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+@media screen and (max-width:0px){
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+    background-color:white;
+    position:sticky;
+    top: 0;
+    width: 85.5%;
+    height:2.5%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+li {
+    list-style-type: none;
+    float: right;
+    padding: 4px;
+}
+li a {
+    display: inline-block;
+    color: rgb(6, 21, 105);
+    text-align: center;
+    padding: 7px 8px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+li a:hover:not(.active) {
+    background-color: #bb2323;
+    border-radius: 2.5px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+}
+
+img.logo{
+  float: left;
+  width: 100%;
+  margin-left:20%;
+  top: 0;
+}  
+
+.active {
+    background-color: none;
+}
+.neche{
+    float: left;
+    font-size:300% ;
+    color:rgb(255, 0, 0);
+    margin-left: 5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Menu{
+   text-align: center;
+   font-size: xx-large;
+ 
+}
+#order {
+   border-collapse: collapse;
+   width: 100%;
+
+}
+
+#order td, #order th {
+   border: 1px solid #ddd;
+   padding: 8px;
+}
+
+#order tr:nth-child(even){background-color: #f2f2f2;}
+
+#order tr:hover {background-color: #ddd;}
+
+#order th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #b81919;
+    color: white;
+}
+.about{
+   background-color: #8d0f0f;
+   text-align: center;
+   height: 100%;
+}
+.aboutimg{
+   border-radius: 30%;
+  
+}
+img.chef{
+    border-radius: 80%;
+    float: right;
+    width: 140px;
+    margin-right: 15%;
+}
+p.hours{
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    margin-left: 13%;
+    font-size: 150%;
+    text-align: justify;
+}
+p.hours2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    margin-left: 60%;
+    font-size: 150%;
+    text-align: justify;
+  
+}
+.contact{
+    background-color: #1f386e;
+    margin-bottom: 0px;
+}
+input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 10%;
+    margin-bottom: 16px;
+    resize:vertical;
+}
+
+input[type=submit] {
+    background-color: #03023d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-left: 90%;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ec0511;
+    transition: all .8s ease-in-out;
+   
+   
+}
+
+.container {
+    border-radius: 5px;
+    margin-left: 20%;
+    background-color: #1f386e;
+    padding: 20px;
+}
+@media screen and (max-width:980px) {
+ 
+   
+  
+}
+.find{
+   margin-left:20%;
+   font-size: 150%;
+   color: aliceblue;
+} 
+.footer{
+    padding:30px;
+    margin-bottom: 0%;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+        </style>
+        
+	
+    
+
+
+  
+    <!-- <h1 style="text-alig`n: center;font-family: monospace;">THE <span style="color:rgb(26, 128, 153);">WORLDS GREATEST</span> PIZZA </h1> -->
+    
+
+
+
+
+  <ul>
+    
+    <li style="float: left; width: 10%;"> <img class="logo" src="./pics/pizza logo.jpg"></a></li>
+  
+  <div class="neche">
+    <li style="margin-top: 5%;"><b>Domino's <span style=color:blue;>Pizza</span></b></li>
+  </div>
+  
+    <li><a href=""><b>Services</b></a></li>
+    <li><a href=""><b>Testimonials</b></a></li>
+    <li><a href=""><b>Contact</b></a></li>
+    <li><a href=""><b>About</b></a></li>
+    <li><a href="new.html"><b>Home</b></a></li>
+</ul>
+<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container1">
+    <div class="ws_images"><ul>
+      <li><img src="data1/images/img20231018wa0001.jpg" alt="IMG-20231018-WA0001" title="IMG-20231018-WA0001" id="wows1_0"/></li>
+      <li><img src="data1/images/img20231018wa0002.jpg" alt="IMG-20231018-WA0002" title="IMG-20231018-WA0002" id="wows1_1"/></li>
+      <li><img src="data1/images/img20231018wa0003.jpg" alt="IMG-20231018-WA0003" title="IMG-20231018-WA0003" id="wows1_2"/></li>
+      <li><img src="data1/images/img20231018wa0006.jpg" alt="IMG-20231018-WA0006" title="IMG-20231018-WA0006" id="wows1_3"/></li>
+      <li><a href="http://wowslider.net"><img src="data1/images/img20231018wa0005.jpg" alt="jquery carousel slider" title="IMG-20231018-WA0005" id="wows1_4"/></a></li>
+      <li><img src="data1/images/img20231018wa0004.jpg" alt="IMG-20231018-WA0004" title="IMG-20231018-WA0004" id="wows1_5"/></li>
+    </ul></div>
+  <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wow slider</a> by WOWSlider.com v9.0</div>
+    <div class="ws_shadow"></div>
+    </div>	
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->
+    
+<div class="Menu">
+<h1><span style="color: red;">THE</span> MENU</h1>
+</div>
+
+<table id="order">
+<tr>
+  <th>PIZZA</th>
+  <th>SALLAD</th>
+  <th>SOUP</th>
+</tr>
+
+<tr>
+  <td><b>The Mexican Peperonni Pizza</b> <h3 style=float:right;>$22</h3></td>
+  <td><b>Plane Sallad With Mushroom</b><h3 style=float:right;>$35.88</h3></td>
+  <td><b>The Egusi Soup</b><h3 style=float:right;>$15.88</h3></td>
+</tr>
+<tr>
+  <td><b>Pineapple Pizza</b><h3 style=float:right;>$35</h3></td>
+  <td><b>Seafood pasta Sallad</b><h3 style=float:right;>$27.88</h3></td>
+  <td><b>The Okro Soup</b><h3 style=float:right;>$25.8</h3></td>
+  </tr>
+<tr>
+    <td><b>The Italian Pizza</b><h3 style=float:right;>$99.88</h3></td>
+    <td><b>Green Peas Sallad</b><h3 style=float:right;>$152</h3></td>
+    <td><b>The Vegetable Soup</b><h3 style=float:right;>$122</h3></td>
+<tr>
+    <td><b>The Italian Mushroom Pizza</b><h3 style=float:right;>$22.8</h3></td>
+<td><b>Spaghetti Classica</b><h3 style=float:right;>$28</h3></td>   
+<td><b>The White Soup</b><h3 style=float:right;>%35</h3></td>   
+</tr>
+<tr>
+<td><b>Meat Town Hot! Pizza</b><h3 style=float:right;>$22</h3></td>
+<td><b>Lasagna Popular</b><h3 style=float:right;>$12</h3></td>
+<td><b>Amala And Okro</b><h3 style=float:right;>$50</h3></td>
+</tr>
+</table>
+<div class="about">
+<h1 style="font-size: 300%; color: #ddd;">About</h1>
+<p style="font-size: 200%;color: white;text-align:center;">The Pizza Restaurant was founded in florida Georgia by Mr. Damian on the 14th of October 2023 and with his dedication and hardwork he was able to published it in two days after, and now <strong>DOMINOS PIZZA</strong> is now known all over the world tanx to Mr. lotanna and his crew for all they have put in this prestigous company.
+</p>
+<p style="font-size: xx-large;"><strong>The Chef?</strong> Mrs. Neche herself<img class="chef" src="./pics/chef.jpg"  alt="Chef"></p>
+<p style="font-size: xx-large;">We are proud of our interiors.</p>
+<img  src="./pics/onepage_restaurant.jpg">
+<h1 style="margin-right: 54%;color: aliceblue;font-family: Arial, Helvetica, sans-serif;font-size: 250%;"><strong>Opening Hours</strong></h1><br>
+
+<P class="hours">Mon & Tue CLOSED</P> <p class="hours2">Friday 10:00 - 12:00</p>
+<P class="hours">Wednesday 10.00 - 24.00</p> <p class="hours2">Saturday 10:00 - 23:00</p>
+<P class="hours">Thursday 10:00 - 24:00</P> <p class="hours2">Sunday Closed</p>
+</div>
+<div class="contact">
+<img style="width: 99.99%; height: 100%;margin-top: 0;"src="./pics/map.jpg">
+<iframe src="" frameborder="0"></iframe>
+
+  <h1 style="font-size: 300%;text-align: center;">Contact</h1>
+  <div class="find">
+    
+  <p>Find us at Harrison sholaja street or call us at 07061335401</p>
+
+ <p><span style="background-color: black;">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs</p> and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+</p>
+<p style="font-size: 150%;"><span style="font-size: 120%;"><b>Reserve</b></span> a table, ask for today's special or just send us a message:</p>
+  </div>
+  
+    <div class="container">
+      <form name="myForm" onsubmit="return(validateForm())" method="post" required>
+        <label for="fname"><b>First Name</b></label><br> 
+        <input  type="text" id="fname" name="firstname" placeholder="Your name.." required ><br>
+    
+        <label  for="lname"><b>Last Name</b></label><br>
+        <input title="put in your last name" type="text" id="lname" name="lastname" placeholder="Your last name.." ><br>
+    
+        <label for="country"><b>Country</b></label><br>
+        <select onchange="change()" id="country" name="country" ><br>
+          <option value="australia">Japan</option>
+          <option value="canada">Canada</option>
+          <option value="usa">Nigeria</option>
+          <option value="usa">South Africa</option>
+          <option  value="usa">London</option>
+          <option  value="usa">Ukraine</option>
+          <option  value="usa">Russia</option>
+          <option  value="usa">Dubai</option>
+          <option  value="usa">America</option>
+          <option  value="usa">Egypt</option>
+          <option  value="usa"><b>Australia</b></option>
+          <option  value="usa">china</option>
+
+
+        </select><br>
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter Email" name="email" ><br>
+       
+        <label for="subject"><b>Subject</b></label><br>
+        <textarea id="subject" name="subject" placeholder="Message/special requirements" style="height:200px"></textarea><br>
+    
+        <input  type="submit" value="Submit">   
+    </div>
+    
+<h1 style="float: right;" id="demo"></h1>
+  </form>
+</div>
+
+
+<div class="footer">
+  <p>© 2023 Dominos pizza .Desingend by lotanna</p>
+</div>
+</body>
+
+</html>
